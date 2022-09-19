@@ -1,0 +1,24 @@
+.target-element {
+  /* transform: translate(0, 30px); */
+}
+
+/* .target-element {
+  position: relative;
+  top: 30px;
+} */
+
+.target-element {
+  width: 100%;
+  position: absolute;
+  animation: 1s infinite alternate animation;
+}
+
+@keyframes animation {
+  from {
+    top: 0;
+  }
+
+  to {
+    top: 30px;
+  }
+}

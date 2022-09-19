@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="index.css" />
+    <title>01. What is CSS selector specificity and how does it work?</title>
+    <style>
+      body {
+        background-color: #0d3934;
+        font-family: sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        color: #f7849e;
+      }
+      h1 {
+        margin: 0;
+        padding: 0;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        width: 100vw;
+        height: 100vh;
+        box-sizing: border-box;
+        padding: 2em;
+        font-size: 3em;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="wrapper">
+      <h1 class="question" id="question-1">
+        Specificity is calculated by counting the number of each type of
+        selector in a selector.
+      </h1>
+    </section>
+  </body>
+</html>

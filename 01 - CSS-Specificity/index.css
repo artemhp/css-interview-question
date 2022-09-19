@@ -1,0 +1,15 @@
+.question {
+  color: azure;
+}
+
+body .wrapper .question {
+  color: lightcoral;
+}
+
+body .wrapper h1 {
+  color: lime;
+}
+
+[id="question-1"] {
+  color: maroon;
+}
