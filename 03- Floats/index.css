@@ -1,0 +1,8 @@
+.question video {
+  float: right;
+}
+
+.question:last-child {
+  float: left;
+  width: 50%;
+}
