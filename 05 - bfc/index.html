@@ -8,7 +8,7 @@
     <title>03 - Floats</title>
     <style>
       body {
-        background-color: #37526d;
+        background-color: #0d3934;
         font-family: sans-serif;
         text-align: center;
         margin: 0;
@@ -30,14 +30,13 @@
         font-size: 2em;
       }
       #question-1 img {
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
       }
       #question-1 {
         box-sizing: border-box;
         color: yellowgreen;
-        padding-right: 15px;
-        padding-left: 15px;
+        background-color: rgba(0, 0, 0, 0.3);
       }
       #question-2 {
         box-sizing: border-box;
@@ -49,20 +48,22 @@
   <body>
     <section class="wrapper">
       <div class="question" id="question-1">
-        <img src="css-3.png" alt="" />
+        <div style="margin-bottom: 50px">
+          A block formatting context (BFC) is a part of a visual CSS rendering
+          of a web page. It's the region in which the layout of block boxes
+          occurs and in which floats interact with other elements.
+        </div>
       </div>
       <div class="question" id="question-2" style="margin-top: 50px">
-        <p>
-          A floating element is one where the computed value of float is not
-          none. As float implies the use of the block layout, it modifies the
-          computed value of the display values, in some cases:
-        </p>
-        <p>
-          The float CSS property places an element on the left or right side of
-          its container, allowing text and inline elements to wrap around it.
-          The element is removed from the normal flow of the page, though still
-          remaining a part of the flow (in contrast to absolute positioning).
-        </p>
+        Formatting contexts affect layout, but typically, we create a new block
+        formatting context for the positioning and clearing floats rather than
+        changing the layout, because an element that establishes a new block
+        formatting context will:
+        <ol>
+          <li>contain internal floats.</li>
+          <li>exclude external floats.</li>
+          <li>suppress margin collapsing.</li>
+        </ol>
       </div>
     </section>
   </body>
