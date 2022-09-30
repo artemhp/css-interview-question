@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
+    <title>Document</title>
+    <style>
+      body {
+          background-color: #0d3934;
+          padding-top: 30px;
+          font-family: 'Courier New', Courier, monospace;
+          font-weight: 600;        
+      }
+      [class^='box-'] {        
+          width: 50em;
+          height: 50em;
+          line-height: 50em;
+          text-align: center;
+          border: 5em solid black;
+          margin: 2em;        
+      }
+      [class^='box-'] span {
+          font-size: 18em;
+      }
+      .box-1 {
+          background-color: azure;
+          margin-left: 100em;
+      }
+      .box-2 {
+          background-color: deeppink;
+          margin-left: 60em;
+          margin-top: -45em;
+      }
+      .box-3 {
+          margin-left: 125em;
+          margin-top: -35em;
+          background-color: darkcyan;
+      }
+      .box-0 {
+          margin-left: 125em;        
+          background-color: lightgreen;
+          margin-top: 15em;
+      }
+      .area {
+          background-color: rgba(255, 255, 255, 0.4);
+          padding: 30em;        
+      }
+      .area-2,
+      .area {
+          font-size: 3px;
+      }
+      .area {z-index: 2; position: relative;}
+      .area-2 {z-index: 1;}
+      
+    </style>
+    <link rel="stylesheet" href="index.css" />
+  </head>  
+  <body>
+    <div class="area">
+      <div class="box-1"><span>1</span></div>
+      <div class="box-2"><span>2</span></div>
+      <div class="box-3"><span>3</span></div>      
+    </div>
+    <div class="area-2">
+        <div class="box-0"><span>0</span></div>
+    </div>
+  </body>
+</html>

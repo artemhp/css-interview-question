@@ -1,0 +1,32 @@
+[class^='area'] {
+    /* Create Context */
+    position: relative;
+}
+
+.box-1 {        
+    position: relative;
+    z-index: 1;
+}
+
+.box-2 {
+    position: relative;
+    z-index: -5;
+}
+
+.box-3 {
+    position: relative;
+    z-index: 10;
+}
+
+.box-0 {
+    position: absolute;
+    top: -300px;
+    z-index: 10000000;
+}
+
+.area {
+    z-index: 100;
+}
+.area-2 {
+    z-index: 10;
+}

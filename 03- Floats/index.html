@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="normalization.css" />
+    <title>01. What is CSS selector specificity and how does it work?</title>
+    <style>
+      body {
+        background-color: #0d3934;
+        font-family: sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 40px;
+        height: 100vh;
+      }
+      .header {
+        font-size: 3em;
+        /* padding-top: 35px; */
+        color: azure;
+      }
+      .wrapper {
+        margin: 0;
+        padding: 0;
+        display: block;
+        justify-content: center;
+        align-content: center;
+        box-sizing: border-box;
+        font-size: 2em;
+      }
+      #question-1 {
+        color: yellowgreen;
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 15px;
+      }
+      #question-2 {
+        color: azure;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="wrapper">
+      <div class="question" id="question-1">
+        <div>
+          The float CSS property places an element on the left or right side of
+          its container, allowing text and inline elements to wrap around it.
+          The element is removed from the normal flow of the page, though still
+          remaining a part of the flow (in contrast to absolute positioning).
+        </div>
+      </div>
+      <div class="question" id="question-2">
+        The float CSS property places an element on the left or right side of
+        its container, allowing text and inline elements to wrap around it. The
+        element is removed from the normal flow of the page, though still
+        remaining a part of the flow (in contrast to absolute positioning). The
+        float CSS property places an element on the left or right side of its
+        container, allowing text and inline elements to wrap around it. The
+        element is removed from the normal flow of the page, though still
+        remaining a part of the flow (in contrast to absolute positioning). The
+        float CSS property places an element on the left or right side of its
+        container, allowing text and inline elements to wrap around it. The
+        element is removed from the normal flow of the page, though still
+        remaining a part of the flow (in contrast to absolute positioning).
+      </div>
+    </section>
+  </body>
+</html>
