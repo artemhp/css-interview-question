@@ -29,9 +29,11 @@
         box-sizing: border-box;
         font-size: 2em;
       }
-      #question-1 img {
-        width: 200px;
-        height: 200px;
+      #question-1 video {
+        width: 240px;
+        height: 240px;
+        -webkit-mask-box-image: url("https://media.flaticon.com/dist/min/img/video/rex/mask.svg");
+        mask-image: url("https://media.flaticon.com/dist/min/img/video/rex/mask.svg");
       }
       #question-1 {
         box-sizing: border-box;
@@ -49,9 +51,14 @@
   <body>
     <section class="wrapper">
       <div class="question" id="question-1">
-        <img src="css-3.png" alt="" />
+        <video>
+          <source
+            src="https://media.flaticon.com/dist/min/img/video/rex/video.mp4"
+            type="video/mp4"
+          />
+        </video>
       </div>
-      <div class="question" id="question-2" style="margin-top: 50px">
+      <div class="question" id="question-2">
         <p>
           A floating element is one where the computed value of float is not
           none. As float implies the use of the block layout, it modifies the
