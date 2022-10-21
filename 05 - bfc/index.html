@@ -27,7 +27,7 @@
         justify-content: center;
         align-content: center;
         box-sizing: border-box;
-        font-size: 2em;
+        font-size: 1.5em;
       }
       #question-1 img {
         width: 200px;
@@ -46,16 +46,18 @@
     </style>
   </head>
   <body>
-    <section class="wrapper">
+    <section class="wrapper">   
+       <!--Now BFC!  -->
       <div class="question" id="question-1">
         <div>
+          <div class="image"><img src="block.png" alt=""></div>
           A block formatting context (BFC) is a part of a visual CSS rendering
           of a web page. It's the region in which the layout of block boxes
           occurs and in which floats interact with other elements.
         </div>
       </div>
       <div class="question" id="question-2">
-        <div>
+        <div>          
           Formatting contexts affect layout, but typically, we create a new block
           formatting context for the positioning and clearing floats rather than
           changing the layout, because an element that establishes a new block

@@ -1,0 +1,14 @@
+#question-2 > div {
+    margin-top: 100px;
+}
+#question-1 > div {
+    margin-bottom: 100px;
+}
+
+#question-1 .image {
+    float: left;
+}
+
+#question-1 {
+    display: flow-root;
+}

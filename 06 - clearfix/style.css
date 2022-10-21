@@ -1,0 +1,10 @@
+img {
+  margin: 10px;
+}
+.container {
+  background-color: darkcyan;
+  /* Background is not visible because height = 0px */
+}
+.container > .img {
+  float: left;
+}
