@@ -1,7 +1,13 @@
 img {
   margin: 10px;
 }
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
 .container {
+  /* display: flow-root; */
   background-color: darkcyan;
   /* Background is not visible because height = 0px */
 }
