@@ -1,27 +1,19 @@
 body {
   color: whitesmoke;
 }
-/* Rank/Specificity = 10 points */
+
 .question {
   color: deeppink;
 }
-/* Rank/Specificity = 1 point */
 h1 {
   color: white;
 }
-/* Rank/Specificity = 10 * 6 points + 1 point = 61 points */
 .wrapper.wrapper.wrapper.wrapper.wrapper.wrapper h1 {
-  color: lime;
+  color: darkseagreen;
 }
-/* Rank/Specificity = 10 points + 10 points + 1 point = 21 points */
 .header + .wrapper h1 {
   color: firebrick;
 }
-/* Rank/Specificity = 10 points */
-[id='question-1'] {
-  color: deepskyblue;
-}
-
 #question-1 {
-  color: red;
+  color: bisque;
 }
