@@ -5,71 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="normalization.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
     <title>03 - Floats</title>
     <style>
       body {
-        background-color: #37526d;
-        font-family: sans-serif;
-        text-align: center;
-        margin: 0;
-        padding: 40px;
-        height: 100vh;
-      }
-      .header {
-        font-size: 3em;
-        /* padding-top: 35px; */
-        color: azure;
-      }
-      .wrapper {
-        margin: 0;
-        padding: 0;
-        display: block;
-        justify-content: center;
-        align-content: center;
-        box-sizing: border-box;
+        background-color: #37526d;                
+      }      
+      section {
         font-size: 2em;
+        font-family: 'Itim';
+        color: aliceblue;
       }
-      #question-1 video {
+      ul {
+        background-color: rgba(0,0,0,0.5);
+        padding: 25px 60px ;
+      }
+      video {
         width: 240px;
         height: 240px;
+        margin: 30px 50px;
         -webkit-mask-box-image: url("https://media.flaticon.com/dist/min/img/video/rex/mask.svg");
         mask-image: url("https://media.flaticon.com/dist/min/img/video/rex/mask.svg");
-      }
-      #question-1 {
-        box-sizing: border-box;
-        color: yellowgreen;
-        padding-right: 15px;
-        padding-left: 15px;
-      }
-      #question-2 {
-        box-sizing: border-box;
-        color: azure;
-        text-align: left;
       }
     </style>
   </head>
   <body>
-    <section class="wrapper">
-      <div class="question" id="question-1">
-        <video>
-          <source
-            src="https://media.flaticon.com/dist/min/img/video/rex/video.mp4"
-          />
-        </video>
-      </div>
-      <div class="question" id="question-2">
-        <p>
-          A floating element is one where the computed value of float is not
-          none. As float implies the use of the block layout, it modifies the
-          computed value of the display values, in some cases:
-        </p>
-        <p>
-          The float CSS property places an element on the left or right side of
-          its container, allowing text and inline elements to wrap around it.
-          The element is removed from the normal flow of the page, though still
-          remaining a part of the flow (in contrast to absolute positioning).
-        </p>
-      </div>
+    <section style="background-color: blanchedalmond;">
+      <video  autoplay loop muted>
+        <source
+          src="https://media.flaticon.com/dist/min/img/video/rex/video.mp4"
+        />
+      </video>     
+      <ul>
+        <li>Dinosaurs are a group of reptiles that have lived on Earth for about 245 million years. </li>
+        <li>In 1842, the English naturalist Sir Richard Owen coined the term Dinosauria, derived from the Greek deinos, meaning “fearfully great,” and sauros, meaning “lizard.”</li>
+        <li>Dinosaur fossils have been found on all seven continents.</li>
+        <li>All non-avian dinosaurs went extinct about 66 million years ago.</li>
+        <li>here are roughly 700 known species of extinct dinosaurs.</li>
+        <li>Modern birds are a kind of dinosaur because they share a common ancestor with non-avian dinosaurs.</li>          
+      </ul>          
     </section>
   </body>
 </html>

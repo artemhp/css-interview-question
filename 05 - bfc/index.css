@@ -1,14 +1,18 @@
-#question-2 > div {
+.wrapper {
+    /* display: flow-root; */
+    overflow: hidden;
+}
+header {
+    display: flow-root;
+}
+header h1 {
+    margin-bottom: 100px;    
+}
+
+.question {
     margin-top: 100px;
 }
-#question-1 > div {
-    margin-bottom: 100px;
-}
 
-#question-1 .image {
+.image {
     float: left;
-}
-
-#question-1 {
-    display: flow-root;
 }

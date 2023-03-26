@@ -3,27 +3,32 @@
   position: relative;
 }
 
+.area {
+    display: flex;
+}
+
 .box-1 {    
-    position: relative;
-    z-index: 1;
+   z-index: 30;
 }
 
 .box-2 {
-    position: relative;
-    z-index: -5;
+    z-index: 20;
 }
 
 .box-3 {
-    position: relative;
-    z-index: 10;
+   z-index: 10;
+}
+
+.box-4 {
+   z-index: 15;
 }
 
 .box-0 {
-    position: absolute;
-    top: -300px;
-    z-index: 100000000;
+
 }
 
 .area-2 {
-    z-index: 100;
+    /* position: relative;
+    top: -400px;
+    z-index: 2; */
 }

@@ -1,8 +1,9 @@
-.question video {
+video { 
   float: right;
 }
 
-.question:last-child {
+ul {  
+  /* clear: both; */
   float: left;
   width: 50%;
 }

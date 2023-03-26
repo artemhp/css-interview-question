@@ -4,71 +4,58 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="normalization.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <title>03 - Floats</title>
     <style>
+      header {
+        background-color: darkgreen;
+      }
       body {
         background-color: #3f4d51;
         font-family: sans-serif;
         text-align: center;
         margin: 0;
         padding: 40px;
-        height: 100vh;
+        font-family: 'Poppins';
       }
-      .header {
-        font-size: 3em;
-        /* padding-top: 35px; */
-        color: azure;
+      .wrapper {          
+        font-size: 1.1em;       
+      }
+      .question img {
+        width: 250px;
+        height: 250px;
       }
       .wrapper {
-        margin: 0;
-        padding: 0;
-        display: block;
-        justify-content: center;
-        align-content: center;
-        box-sizing: border-box;
-        font-size: 1.5em;
-      }
-      #question-1 img {
-        width: 200px;
-        height: 200px;
-      }
-      #question-1 {
         box-sizing: border-box;
         color: #7cd6f1;
         background-color: rgba(0, 0, 0, 0.3);
+        border: 4px dashed yellowgreen;
+        padding-left: 50px;
+        padding-right: 50px;
       }
-      #question-2 {
-        box-sizing: border-box;
-        color: azure;
-        text-align: left;
+      h1 {
+        color: antiquewhite;
+        padding: 10px;
       }
     </style>
   </head>
-  <body>
-    <section class="wrapper">   
-       <!--Now BFC!  -->
-      <div class="question" id="question-1">
-        <div>
-          <div class="image"><img src="block.png" alt=""></div>
-          A block formatting context (BFC) is a part of a visual CSS rendering
-          of a web page. It's the region in which the layout of block boxes
-          occurs and in which floats interact with other elements.
-        </div>
-      </div>
-      <div class="question" id="question-2">
-        <div>          
-          Formatting contexts affect layout, but typically, we create a new block
-          formatting context for the positioning and clearing floats rather than
-          changing the layout, because an element that establishes a new block
-          formatting context will:
-        </div>        
-        <ol>
-          <li>contain internal floats.</li>
-          <li>exclude external floats.</li>
-          <li>suppress margin collapsing.</li>
-        </ol>
-      </div>
-    </section>
+  <body>    
+    <div class="wrapper"> 
+      <header>
+        <h1>Block Formatting Context</h1>
+      </header>             
+      <div class="question">        
+          <div class="image">
+            <img src="block.png" alt="">
+          </div>
+          <p>
+            A block formatting context (BFC) is a part of a visual CSS rendering
+            of a web page. It's the region in which the layout of block boxes
+            occurs and in which floats interact with other elements.
+          </p>
+      </div>      
+    </div>
   </body>
 </html>
